@@ -1,17 +1,41 @@
 :root {
-    
+    --heading-background-color: steelblue;
+    --heading-text-color: #abddc5;
+    --heading-font: 'didot', 'georgia' , serif;
+    --h1-color: #1009c2;
+    --body-text: 'tahoma', 'verdana', sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgba(0,0,0,0.1);
+    --width: 70rem;
+
 }
 nav {
     background-color: steelblue;
     padding: 10px;
 }
 nav a {
-    color: white;
+    color: var(--heading-text-color);
     display: block;
     padding: 20px;
 }
 h1 {
-    color: steelblue;
+    color: var(--h1-color);
+    font-family: var(--heading-font);
+    padding: var(--padding);
+
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: var(--heading-font);
+    color: var(--h1-color);
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 }
 img {
     width: 150px;
@@ -21,13 +45,14 @@ img {
     box-shadow: 0 0 30px gray;
 }
 p {
+    font-family: var(--body-text);
     padding: 10px;
 }
 main {
-    max-width: 840px;
+    max-width: var(--width);
 }
 aside {
-    width: 20rem;
+    width: var(--width);
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -36,7 +61,7 @@ aside {
     text-align: center;
 }
 aside img {
-    width: 200px;
+    width: 18rem;
     height: auto;
 }
 main img{
