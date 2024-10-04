@@ -1,17 +1,27 @@
 :root {
-    --heading-background-color: steelblue;
-    --heading-text-color: #abddc5;
-    --heading-font: 'didot', 'georgia' , serif;
-    --h1-color: #1009c2;
-    --body-text: 'tahoma', 'verdana', sans-serif;
+    --heading-background-color: #3f8efc;
+    --heading-text-color: #deba6f;
+    --heading-font-family: 'Amatic', 'Caveat', sans-serif;
+    
+    --h1-color: #3f8efc;
+    --primary-color:#3f8efc;
+    --secondary-color: #fcddbc;
+    --accent1-color: #5bc0be;
+    --accent2-color: #6fffe9;
+
+    --body-text: 'Montserrat', 'Verdana', sans-serif;
     --padding: 1rem;
     --border: 1px solid rgba(0,0,0,0.1);
     --width: 70rem;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--heading-font-family);
+    }
 
 }
 nav {
-    background-color: steelblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
+    font-family: var(--heading-font-family);
 }
 nav a {
     color: var(--heading-text-color);
@@ -20,7 +30,7 @@ nav a {
 }
 h1 {
     color: var(--h1-color);
-    font-family: var(--heading-font);
+    font-family: var(--heading-font-family);
     padding: var(--padding);
 
 }
