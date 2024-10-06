@@ -15,10 +15,22 @@
     --padding: 1rem;
     --border: 1px solid rgba(0,0,0,0.1);
     --width: 70rem;
-   
-
 }
-
+h1 {
+    color: #5b60be;
+    font-size: 125px;
+    font-family: 'Amatic', 'Caveat', sans-serif;
+}
+h2 {
+    color: #3f8efc;
+    font-size: 75px;
+    font-family:'Amatic', 'Caveat', sans-serif; ;
+}
+p {
+    color: black;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Verdana', sans-serif;
+}
 body {
     font-size: var(--base-font-size);
 }
