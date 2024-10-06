@@ -1,39 +1,5 @@
 :root {
     
-    // <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 100 to 900
-
-    .montserrat-<uniquifier> {
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-    }
-
-    // <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 400 to 700
-
-.caveat-<uniquifier> {
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.amatic-sc-regular {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .amatic-sc-bold {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  
-
     --heading-background-color: #3f8efc;
     --heading-text-color: #deba6f;
     --heading-font-family: 'Amatic', 'Caveat', sans-serif;
@@ -54,139 +20,36 @@
 body {
     font-size: var(--base-font-size);
 }
-nav {
-    background-color: var(--heading-background-color);
-    padding: 10px;
-    font-family: var(--heading-font-family);
-}
-nav a {
-    color: var(--heading-text-color);
-    display: block;
-    padding: 20px;
-}
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html, body {
-    height: 100%;
-    width: 100%;
-}
-Header{
-    position-relative;
-   
-}
 .hero {
     position:relative;
     width:100%;
-    height: 100vh; /*Full viewport height*/
-    background-image: ('images/rafting-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-.hero-img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
-    background: url('images/rafting-banner.jpg') no-repeat center center/cover;
 }
-.hero-content h1 {
+.hero h1 {
     postition: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:#5b60be;
     font-size: 3rem;
-    z-index: 1;
 }
-.secondary-content {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 2;
-}
-.secondary-content img{
-    width: 200px; /*adjust as needed*/
-    border: 5px solid white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-
-}
-h1 {
-    color: var(--h1-color);
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    font-family: var(--heading-font-family);
-    font-weight: 700;
-    font-style: var(--heading-font);
-    font-size: x-large;
-}
-h2 {
-    color: var(--h2-color);
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    font-family: var(--heading-font-family);
-    font-weight: 700;
-    font-style: var(--heading-font);
-    font-size: medium;
-}
-h3 {
-    color: var(--h3-color);
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    font-family: var(--heading-font-family);
-    font-weight: 700;
-    font-style: var(--heading-font);
-    font-size: small;
-}
-img {
-    width: 150px;
+.hero article img {
+    width: 100px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    float:right;
 }
-p {
-    font-family: var(--body-text);
-    padding: 10px;
+.hero article {
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    background-color: #6fffe9;
 }
-main {
-    max-width: var(--width);
-}
-main img{
-    width: 150px;
-    height: auto;
-}
-p { padding: 0;}
-
 a {
     text-decoration: none;
 }
-
-.text-line {
-    align-items:last baseline;
-}
-
-footer{
-    background-color: var(--heading-background-color);
-    color: var(--body-text);
-    padding: 20px;
-    position: relative;
-}
-.footer-content {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.icon-holder {
-    margin-left: 10px;
-}
-.icon-holder img {
-    width: 30px;
-    height: 30 px;
-}
-    text-align: center;
