@@ -3,11 +3,6 @@
     --heading-background-color: #3f8efc;
     --heading-text-color: #deba6f;
     --heading-font-family: 'Amatic', 'Caveat', sans-serif;
-    --heading-font:'Amatic, 'Caveat', sans-serif;
-    --heading2-font: 'Amatic', 'Caveat'
-    --heading2-text-color: #5b60be;
-    --heading2-font-size: 60px;
-    --heading-text-size: 45px;
     --body-text: 'Montserrat', 'Verdana', sans-serif;
     --base-font-size: 16px; /* 1rem = 16px */
     --h1-color: #6fffe9;
@@ -20,7 +15,7 @@
     --padding: 1rem;
     --border: 1px solid rgba(0,0,0,0.1);
     --width: 70rem;
-    --background-color: #fcddbc;
+   
 
 }
 
