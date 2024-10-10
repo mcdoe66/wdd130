@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --heading-background-color: #3f8efc;
     --heading-text-color: #deba6f;
@@ -11,15 +16,26 @@
     --padding: 1rem;
     --border: 1px solid rgba(0,0,0,0.1);
     --width: 70rem;
+
+.grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+    }
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 h1, h2, h3, h4, h5, h6 {
         font-family: var(--heading-font-family);
     }
-    header, footer{
+header, footer{
         max-width: 840px;
         margin: 0 auto;
     }
 
 nav {
+    width: 840px;
     background-color: var(--heading-background-color);
     padding: 1rem;
     display: flex;
@@ -32,20 +48,23 @@ nav a {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 500;
     color:azure;
-
 }
 h1 {
     max-width: 840px;
+    font-size: 4em;
     color: var(--h1-color);
     font-family: var(--heading-font-family);
-    padding: var(--padding);
+    padding: 1rem;
+    border-bottom:  5px solid var(--heading-background-color)
+    justify-content: center;
+    margin: 0 auto;
 }
 h2 {
     display: block;
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -53,39 +72,64 @@ h2 {
     font-family: var(--heading-font);
     color: var(--h1-color);
     font-weight: bold;
-    unicode-bidi: isolate;
 }
-img {
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--accent1-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 p {
     font-family: var(--body-text);
-    padding: 10px;
+    padding: 1rem;
 }
 main {
     max-width: 840px;
-    
+    grid-column: 2 / 3;
+    margin: 1rem;
+}
+main img{
+    width: 150px;
+    height: auto;
 }
 aside {
-    max-width: 840px;
-    margin: 1rem;
+    width: 20rem;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
-aside img {
-    width: 18rem;
-    height: auto;
+aside h2 {
+    position: center;
+    top: 25px;
+    left: 40px;
+    font-family: var(--heading-font-family);
 }
-main img{
-    width: 150px;
+aside img {
+    width: 200px;
     height: auto;
 }
 p { padding: 0;}
+footer {
+    margin-top: 15px;
+    border-top: 1px solid var(--accent1-color);
+    text-align: center;
+}
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 1rem;
+    background-color: antiquewhite;
+    color: #333;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
 
