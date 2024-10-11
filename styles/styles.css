@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 header, footer{
         max-width: 840px;
         margin: 0 auto;
+        border-bottom:  5px solid var(--heading-background-color)
     }
 
 nav {
@@ -58,7 +59,7 @@ h1 {
     color: var(--h1-color);
     font-family: var(--heading-font-family);
     padding: 1rem;
-    border-bottom:  5px solid var(--heading-background-color)
+   
     justify-content: center;
     margin: 0 auto;
 }

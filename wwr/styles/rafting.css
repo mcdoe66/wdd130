@@ -67,3 +67,6 @@ body {
 a {
     text-decoration: none;
 }
+header img {
+    width: 20rem;
+}
