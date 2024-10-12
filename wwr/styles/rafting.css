@@ -65,7 +65,7 @@ header nav {
     list-style: none;
     width: 100%;
     display: flex;
-    align-items: space-evenly;
+    justify-content: space-evenly;
 }
 header nav a {
     color: var(--accent2-color);
