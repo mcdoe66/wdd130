@@ -4,13 +4,14 @@
     --heading-font-family: 'Amatic', 'Caveat', sans-serif;
     --body-text: 'Montserrat', 'Verdana', sans-serif;
     --base-font-size: 16px; /* 1rem = 16px */
-    --h1-color: #6fffe9;
-    --h2-color: #5b60be;
+    --h1-color:  rgb(205, 206, 232);
+    --h2-color: #2e7f67f7;
     --h3-color:#fcddbc;
     --primary-color:#3f8ec;
     --secondary-color: #fcddbc;
+    --background-color: aliceblue;
     --accent1-color: #5b60be;
-    --accent2-color: rgb(34, 142, 142);
+    --accent2-color: #104646;
     --padding: 1rem;
     --border: 1px solid rgba(0,0,0,0.1);
 }
@@ -24,16 +25,15 @@
 
 /* below is coding for all headings, coding appearing AFTER this area defining heading instrustions will override this section.*/
 h1 {
-    color: #5b60be;
+    color: var(--h1-color);
     font-size: 2rem; /*check sizing*/
     font-family: 'Amatic', 'Caveat', sans-serif;
 }
 h2 {
-    border: 2px dashed rgb(23, 228, 91);
     text-align: center;
     width: 100%;
-    color: #3f8efc;
-    font-size: 3rem;
+    color: var(--h2-color);
+    font-size: 5rem;
     padding: 0.5em;
     font-family:'Amatic', 'Caveat', sans-serif; ;
 }
@@ -58,7 +58,7 @@ body {
 /*below corresponds to the navigation buttons (index, about us, trips and contact us) in the header*/
 nav {
     width: 100%;
-    font-size: 3rem;
+    font-size: 1rem;
     justify-content: center;
 }
 header nav {
@@ -74,6 +74,7 @@ header nav a {
     padding: 10px 15px;
     font-size: 4rem;
 }
+
 /*this ends the coding for the navigation buttons (index, about us, trips and contact us) in the header*/
 
 /*below corresponds to the header on repeating pages which includes the logo image.*/
@@ -107,7 +108,7 @@ header img{
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:var(--heading-text-color);
+    color: #a68019fc;
     font-size: 7rem;
 }
 .hero p {
@@ -133,35 +134,39 @@ header img{
 /* here ends the upper main image with company name, the inset image, paragraph and background banner*/
 
 /* the below sections consists of the history portion, containing a title, paragraph and image wrapped within the paragraph.*/
-.text-wrap {
-    display: flex;
-   flex-direction: column;
-    align-items: center;
+.history {
+    display: grid;
+    grid-template-columns: 1 fr auto 1fr;
+    background-color: var(--background-color);
+    gap: 20px;
+    align-items: start;
     text-align: center;
     padding: 20px;
 }
-.text-wrap h2 {
+.history h2 {
+    grid-column: 1 / 4;
     margin-bottom: 20px;
 }
-.text-wrap .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.history p:first-of-type {
+    grid-column: 1 / 2;
+    text-align: left;
 }
-.text-wrap p {
-    flex: 1;
-    margin: 0;
-}
-.text-wrap .center-image {
+.history img {
+    grid-column: 2 / 3;
     max-width: 100%;
     height: auto;
 }
+.history p:last-of-type {
+    grid-column: 3 / 4;
+    text-align: left;
+}
+
+
 /* here ends the sections consisting of the history portion, containing a title, paragraph and image wrapped within the paragraph.*/
 
 /*below coresponds to the adventure awaits image placement*/
 section {
+    background-color: var(--background-color);
     text-align: center;
     padding: 20px;
 }
@@ -193,6 +198,7 @@ figure {
 /*this completes the adventure awaits image placement*/
 
 footer {
+    background-color: aliceblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
