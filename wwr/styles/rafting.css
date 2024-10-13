@@ -136,7 +136,7 @@ header img{
 /* the below sections consists of the history portion, containing a title, paragraph and image wrapped within the paragraph.*/
 .history {
     display: grid;
-    grid-template-columns: 1 fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
     background-color: var(--background-color);
     gap: 20px;
     align-items: start;
