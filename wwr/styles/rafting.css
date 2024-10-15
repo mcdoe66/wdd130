@@ -109,7 +109,11 @@ header img{
     left: 50%;
     transform: translate(-50%, -50%);
     color: #a68019fc;
-    font-size: 7rem;
+    font-size: clamp(2rem, 5vw, 7rem);/* this gives a responsive font size*/
+    max-width: 90%; /*this ensures the text will stay within the container*/
+    white-space: nowrap; /*this prevents the text from wrapping*/
+    overflow: hidden; /*prevents overflow from the container*/
+    text-overflow: ellipsis; /*adds ellipsis if the text overflows*/
 }
 .hero p {
     color: var(--h3-color);
@@ -198,6 +202,7 @@ figure {
 /*this completes the adventure awaits image placement*/
 
 footer {
+    border-top: 2px solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
     background-color: aliceblue;
     display: flex;
     justify-content: space-between;
