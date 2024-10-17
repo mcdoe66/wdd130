@@ -1,0 +1,121 @@
+.root {
+    --heading-background-color: #3f8efc;
+    --heading-text-color: #deba6f;
+    --heading-font-family: 'Amatic', 'Caveat', sans-serif;
+    --body-text: 'Montserrat', 'Verdana', sans-serif;
+    --base-font-size: 16px; /* 1rem = 16px */
+    --h1-color:  #a68019fc;
+    --h2-color: #2e7f67f7;
+    --h3-color:#0fba95;
+    --primary-color:#3f8ec;
+    --secondary-color: #fcddbc;
+    --background-color: aliceblue;
+    --accent1-color: #5b60be;
+    --accent2-color: #104646;
+    --padding: 1rem;
+    --border: 1px solid rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-text);
+    font-size: 1.2em;
+    color: var(--accent2-color);
+    background: var(--background-color);
+}
+header {
+    margin: 0;
+    width: 650px;
+
+    font-family: var(--heading-text-color);
+    font-weight: bold;
+    text-align: center;
+}
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: var(--h1-color);
+    text-align: center;
+}
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    background-color: antiquewhite;
+    display: grid;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid var(--accent1-color);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: var(--heading-background-color);
+    font-size: 1.3rem;
+}
+label, input, button, select, textarea {
+    font-family: var(--body-text);
+}
+label {
+    text-align: right;
+    padding-right: 1 rem;
+/*below this area, may need to be removed as it is not in the class notes*/
+    display: inline-block;
+    margin-right: 5px;
+}
+input[type="checkbox"] {
+    vertical-align: middle; /*aligns the checkbox with the text*/
+}
+ /*this did not solve for having the checkbox closer to the question- will need to revisit.*/
+/*end of  area, that may need to be removed as it is not in the class notes*/
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: #3f8efc;
+    color: var(--background-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: var(--h2-color);
+}
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: bisque;
+    border-top: 1px solid var(--h3-color);
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
