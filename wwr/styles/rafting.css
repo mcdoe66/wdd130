@@ -4,9 +4,9 @@
     --heading-font-family: 'Amatic', 'Caveat', sans-serif;
     --body-text: 'Montserrat', 'Verdana', sans-serif;
     --base-font-size: 16px; /* 1rem = 16px */
-    --h1-color:  rgb(205, 206, 232);
+    --h1-color:  #a68019fc;
     --h2-color: #2e7f67f7;
-    --h3-color:#fcddbc;
+    --h3-color:#0fba95;
     --primary-color:#3f8ec;
     --secondary-color: #fcddbc;
     --background-color: aliceblue;
@@ -25,8 +25,9 @@
 
 /* below is coding for all headings, coding appearing AFTER this area defining heading instrustions will override this section.*/
 h1 {
+    text-align: center;
     color: var(--h1-color);
-    font-size: 2rem; /*check sizing*/
+    font-size: 6rem; /*check sizing*/
     font-family: 'Amatic', 'Caveat', sans-serif;
 }
 h2 {
@@ -35,7 +36,15 @@ h2 {
     color: var(--h2-color);
     font-size: 5rem;
     padding: 0.5em;
-    font-family:'Amatic', 'Caveat', sans-serif; ;
+    font-family:var(--heading-font-family); 
+}
+h3 {
+    font-family: var(--heading-font-family);
+    text-align: center;
+    color: var(--h3-color);
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: var(--h3-color);
 }
 /* here end the default coding for all headings, coding appearing AFTER this area defining heading instrustions will override this section.*/
 
@@ -69,10 +78,11 @@ header nav {
     align-items: center;
 }
 header nav a {
+    font-family: var(--body-text);
     color: var(--accent2-color);
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 /*this ends the coding for the navigation buttons (index, about us, trips and contact us) in the header*/
@@ -201,6 +211,74 @@ figure {
 }
 /*this completes the adventure awaits image placement*/
 
+/*-----below is page two- CONTACT US----*/
+
+/* contact us page - h1 */
+
+
+/*contact us page - team members- images and figcaps*/
+.team-members-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.team-members-container {
+    height: 200px;
+    object-fit: cover;
+}
+figure {
+    margin: 0;
+    text-align: center;
+}
+.team-members-container {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.team-members-container img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.team-members-container figcaption {
+    font-family: var(--heading-font-family);
+    font-size: 1.5rem;
+
+}
+
+/*contact us page - how to contact us- address with icon, phone number with icon, email with icon*/
+.contact-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.map {
+    flex: 0 0 200px;
+    margin-right: 20px;
+}
+.contact-container {
+    flex: 1;
+}
+.contact-details img {
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-details p {
+    marging: 0 0 20px 0;
+}
+
+/*contact us page - form for users to send to us- user name and label, user email and label, radio buttons for 'general inquiry', 'reservation question', 'suggestions for website', a textarea for user questions and suggestions, a checkbox for the newsletter, and a submit button.*/
+.inquiry-form label {
+    font-family: var(--body-text);
+}
+
+/*contact us page- image of the rapids to span the entire page*/
+.rapids-image {
+    width: 50%;
+    height: 300px;
+
+
+}
+
 footer {
     border-top: 2px solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
     background-color: aliceblue;
@@ -216,6 +294,7 @@ footer p {
 footer a {
     margin-left: 20px; /*adjust as needed*/
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
