@@ -179,7 +179,7 @@ header img{
 /* here ends the sections consisting of the history portion, containing a title, paragraph and image wrapped within the paragraph.*/
 
 /*below coresponds to the adventure awaits image placement*/
-section {
+div {
     background-color: var(--background-color);
     text-align: center;
     padding: 20px;
