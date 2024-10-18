@@ -7,7 +7,7 @@
     <meta name="description" content="wwrafting contact information">
     <meta name="author" content="Doreen McMahon">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Doreen McMahon | WWD 130 WWRafting Contact Us information</title>
+    <title>Doreen McMahon | WWD 130 WWRafting Contact Us Information</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,8 +33,8 @@
         <section class="page2-h1">
             <h1>Rafting Craft</h1>
         </section>
-
-        <h3>Let Us Introduce Ourselves</h3>
+        <h2>How To Contact Us...</h2>
+        <h3>...but first, let us introduce ourselves;</h3>
 
         <div class="team-members-container">
 
@@ -51,32 +51,34 @@
                 <figcaption>Jim, Associate Scamp </figcaption>
             </figure><br><br><br>
         </div>
-
         <!--add raftcraft address, phone, email here and have the map in same container-->
         <br><br>
-        <h3>How to find us</h3>
-
-
         <div class="contact-container">
-
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2799.5981073427147!2d-75.66899898939059!3d45.43760223509409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1729104809786!5m2!1sen!2sca"
-                    width="300" height="300" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="contact-details">
-                <img src="images/address.jpg" alt="address" width="100" height="100">
-                <p>1234 Adventure Lane<br>
-                    Never Land, Fantasy Country<br>
-                    X0X-0X0<br></p>
-                <img src="images/phone.jpg" alt="phone" width="100" height="100">
-                <p>1-555-555-5555
-                </p>
-                <img src="images/email.jpg" alt="email" width="100" height="100">
-                <p>AdventureSeeker@RaftingCraftEmail.com
-                </p>
-            </div>
+            <h3>How to find us</h3><br>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2799.5981073427147!2d-75.66899898939059!3d45.43760223509409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1729104809786!5m2!1sen!2sca"
+                        width="300" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-details">
+                        <div class="contact-item">
+                            <img src="images/address.jpg" alt="address" width="100" height="100">
+                            <p>1234 Adventure Lane<br>
+                                Never Land, Fantasy Country<br>
+                                X0X-0X0<br></p>
+                        </div>
+                        <div class="contact-item">
+                            <img src="images/phone.jpg" alt="phone" width="100" height="100">
+                            <p>1-555-555-5555
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <img src="images/email.jpg" alt="email" width="100" height="100">
+                            <p>AdventureSeeker@RaftingCraftEmail.com
+                            </p>
+                        </div>
+                </div>
         </div>
         <br><br>
 
@@ -86,31 +88,47 @@
         <section class="inquiry-form">
             <h3>We would love to hear from you.</h3>
             <form action="/submit" method="post">
-                <label for="username">Name</label>
+            <div class="username">
+                <label for="username">User Name</label>
                 <input type="text" id="username" name="username" required><br><br>
+            </div>
 
-                <label for="email">Email</label>
+            <div class="email">
+                <label for="email">User Email</label>
                 <input type="email" id="email" name="email" required><br><br>
+            </div>
 
-                <label>Inquiry Type</label><br><br>
+            <div class="general">
+                <h4>Incredible Questions For The Rafting Craft Team</h4><br><br>
                 <input type="radio" id="general" name="inquiry" value="general" required>
-                <label for="general">A General Inquiry</label><br><br>
+                <label for="general">I Have A General Inquiry For The Team</label><br><br>
+            </div>
 
+            <div class="reservation">
                 <input type="radio" id="reservation" name="inquiry" value="reservation" required>
-                <label for="reservation">A Reservation Question</label><br><br>
+                <label for="reservation">I Have A Reservation Question For The Team</label><br><br>
+            </div>
 
-
+            <div class="suggestions">
                 <input type="radio" id="suggestions" name="inquiry" value="suggestions" required>
-                <label for="suggestions">A Website Suggestion for you</label><br><br>
+                <label for="suggestions">I Have A Website Suggestion For The Team</label><br><br>
+            </div>
 
-                <label for="message">These are my awesome questions and ideas for you</label><br><br>
+            <div class="message">
+                <h4>Here are some awesome questions and ideas for the team;</h4><br>
+                <label for="message">Type text here:</label><br><br>
                 <textarea id="message" name="message" rows="10" cols="50" required></textarea><br><br>
+            </div>
 
+            <div class="newsletter">
                 <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">I would love to receive your monthly newsletter. Please subscribe me
-                    now.</label><br><br>
+                <label for="newsletter">Just click the checkbox to receive an awesome monthly newsletter subscription.</label><br><br>
+            </div>
 
-                <button type="submit">Submit Now</button>
+            <div class="submission">
+                <button type="submit">Click this button to submit<br>this fantastic information.</button>
+            </div>
+
             </form>
         </section>
         <section class="rapids">
