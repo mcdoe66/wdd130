@@ -245,23 +245,33 @@ figure {
 }
 
 /*contact us page - how to contact us- address with icon, phone number with icon, email with icon*/
-.contact-container h3 {
-    text-align: center;
- }
+
 .contact-container {
     display: flex;
-    flex-direction: column;
+    justify-content: column;
     align-items: center;
+    margin-bottom: 20px;
+    width: 100%;;
+}
+.contact-container h3 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .map {
-    margin-bottom: 20px;
     flex: 1;
-    min-width: 300px;  
+    min-width: 300px;
+    margin-right: 20px; 
 }
 .contact-details {
+    flex: 2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 .contact.item {
     display: flex;
