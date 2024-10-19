@@ -250,8 +250,9 @@ figure {
 
 .contact-container {
     display: flex;
-    justify-content: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 20px;
     width: 100%;;
 }
@@ -276,8 +277,8 @@ figure {
     flex-direction: column;
 }
 .contact.item {
-    display: flex;
-    align-items: center;
+    flex: 1;
+    min-width: 30%;
     margin-bottom: 10px;
 }
 .contact-details img {
