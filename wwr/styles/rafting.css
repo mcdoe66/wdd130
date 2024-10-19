@@ -4,9 +4,9 @@
     --heading-font-family: 'Amatic', 'Caveat', sans-serif;
     --body-text: 'Montserrat', 'Verdana', sans-serif;
     --base-font-size: 16px; /* 1rem = 16px */
-    --h1-color:  #a68019fc;
+    --h1-color:  #664d07fc;
     --h2-color: #2e7f67f7;
-    --h3-color:#0fba95;
+    --h3-color:#165d48;;
     --primary-color:#3f8ec;
     --secondary-color: #fcddbc;
     --background-color: aliceblue;
@@ -27,7 +27,7 @@
 /* below is coding for all headings, coding appearing AFTER this area defining heading instrustions will override this section.*/
 h1 {
     text-align: center;
-    color: var(--h1-color);
+    color: #664d07fc;
     font-size: 6rem; /*check sizing*/
     font-family: 'Amatic', 'Caveat', sans-serif;
 }
@@ -119,13 +119,15 @@ header img{
     position: absolute;
     top: 20%;
     left: 50%;
+    padding: 2rem;
     transform: translate(-50%, -50%);
-    color: #a68019fc;
+    color: var(--heading-text-color);
     font-size: clamp(8rem, 5vw, 7rem);/* this gives a responsive font size*/
     max-width: 90%; /*this ensures the text will stay within the container*/
     white-space: nowrap; /*this prevents the text from wrapping*/
     overflow: hidden; /*prevents overflow from the container*/
     text-overflow: ellipsis; /*adds ellipsis if the text overflows*/
+    background-color: transparent;
 }
 .hero p {
     color: var(--h3-color);
@@ -291,7 +293,7 @@ figure {
 }
 h4 {
     font-family: var(--heading-font-family);
-    color: #0fba95;
+    color: var(--h3-color);
     font-size: 2rem;
 }
 .inquiry-form form {
