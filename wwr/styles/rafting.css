@@ -121,7 +121,7 @@ header img{
     left: 50%;
     padding: 2rem;
     transform: translate(-50%, -50%);
-    color: var(--heading-text-color);
+    color: var(--background-color);
     font-size: clamp(8rem, 5vw, 7rem);/* this gives a responsive font size*/
     max-width: 90%; /*this ensures the text will stay within the container*/
     white-space: nowrap; /*this prevents the text from wrapping*/
@@ -344,7 +344,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px; /*adjust as needed*/
+    padding: 100px; /*adjust as needed*/
 }
 footer p {
     flex-grow: 1;
