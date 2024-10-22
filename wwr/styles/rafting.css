@@ -131,6 +131,7 @@ header img{
 }
 .hero p {
     color: var(--h3-color);
+    padding: 20px;
 }
 .hero article img {
     width: 100px;
@@ -334,9 +335,46 @@ h4 {
 .rapids-image {
     width: 50%;
     height: 300px;
-
-
 }
+/*Contact  page ends here*/
+
+/*Index-Home page begins here*/
+
+.home-index-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+.home-index-image-container figure {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-items: center;
+}
+.home-index-image-container fugure img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.home-index-image-container figure figcaption {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+.home-index-image-container figure p {
+    grid-column: 2 / 3;
+    grid-row: 1 /3;
+    align-self: center;
+}
+.home-index-image-container figure:nth-child(5) {
+    grid-column: 1 /3;
+    justify-self: center;
+}
+
+/*Index-Home page begins here*/
 
 footer {
     border-top: 2px solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
