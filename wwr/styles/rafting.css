@@ -91,12 +91,14 @@ header nav a {
 
 /*below corresponds to the header on repeating pages which includes the logo image.*/
 header {
+    border-bottom: 2rem solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
     padding: 10px 20px;
     width: 100%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 5fr;
     background-color: var(--secondary-color);
+    border-bottom: ;
 }
 header img{
     width: 100px; 
@@ -448,19 +450,24 @@ h4 {
 /*Index-Home page begins here*/
 
 footer {
-    border-top: 2px solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
-    background-color: aliceblue;
+    border-top: 2rem solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px; /*adjust as needed*/
+    padding: 50px; /*adjust as needed*/
 }
 footer p {
     flex-grow: 1;
     text-align: center;
+    background-color: var(--secondary-color);
 }
 footer a {
     margin-left: 20px; /*adjust as needed*/
+    background-color: var(--secondary-color);
+}
+footer img {
+    background-color: var(--secondary-color);
 }
 
 .visually-hidden {
