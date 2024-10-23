@@ -4,9 +4,9 @@
     --heading-font-family: 'Amatic', 'Caveat', sans-serif;
     --body-text: 'Montserrat', 'Verdana', sans-serif;
     --base-font-size: 16px; /* 1rem = 16px */
-    --h1-color:  #664d07fc;
+    --h1-color:  rgb(233, 162, 183);
     --h2-color: #2e7f67f7;
-    --h3-color:#165d48;;
+    --h3-color:rgb(22, 93, 72);;
     --primary-color:#3f8ec;
     --secondary-color: #fcddbc;
     --background-color: aliceblue;
@@ -30,6 +30,7 @@ h1 {
     color: #664d07fc;
     font-size: 6rem; /*check sizing*/
     font-family: 'Amatic', 'Caveat', sans-serif;
+    background-color: transparent;
 }
 h2 {
     text-align: center;
@@ -46,7 +47,6 @@ h3 {
     color: var(--h3-color);
     font-size: 3rem;
     padding: 0.5rem;
-    color: var(--h3-color);
 }
 /* here end the default coding for all headings, coding appearing AFTER this area defining heading instrustions will override this section.*/
 
@@ -109,6 +109,8 @@ header img{
 .hero {
     position:relative;
     width:100%;
+    height: 100vh;
+    overflow: hidden;
 }
 .hero img {
     display: block;
@@ -121,35 +123,46 @@ header img{
     left: 50%;
     padding: 2rem;
     transform: translate(-50%, -50%);
-    color: var(--background-color);
-    font-size: clamp(8rem, 5vw, 7rem);/* this gives a responsive font size*/
-    max-width: 90%; /*this ensures the text will stay within the container*/
-    white-space: nowrap; /*this prevents the text from wrapping*/
-    overflow: hidden; /*prevents overflow from the container*/
-    text-overflow: ellipsis; /*adds ellipsis if the text overflows*/
+    color:var(--h1-color);
+    font-size: clamp(8rem, 5vw, 7rem); 
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     background-color: transparent;
 }
 .hero p {
     color: var(--h3-color);
-    padding: 20px;
+    padding: 10px;
+    text-align: left;
+    margin: 0;
+    flex: 1;
 }
 .hero article img {
     width: 100px;
     height: auto;
-    border: 1px solid var(--h2-color);
+    border: 1px solid steelblue;
     padding: 2px;
     float:right;
 }
 .hero article {
     position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 1rem;
-    top: 50%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
     width: 90%;
     background-color:var(--accent2-color);
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 20px;
 }
+
+
+
+
+
+
+
 /* here ends the upper main image with company name, the inset image, paragraph and background banner*/
 
 /* the below sections consists of the history portion, containing a title, paragraph and image wrapped within the paragraph.*/
@@ -340,6 +353,63 @@ h4 {
 
 /*Index-Home page begins here*/
 
+/*Index-Home page FORM begins here*/
+.home-index-inquiry-form {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    border: 10px solid var(--heading-text-color);
+    border-radius: 10px;
+    background-color: transparent;
+}
+.home-index-inquiry-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 22px;
+}
+.home-index-inquiry-form .username,
+.home-index-inquiry-form .emai {
+    display: flex;
+    flex-direction: column;
+}
+.home-index-inquiry-form .message {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+.home-index-inquiry-form .submission {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+.home-index-inquiry-form label {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.home-index-inquiry-form input,
+.home-index-inquiry-form textarea {
+    padding: 10px;
+    border: 5px solid var(--heading-text-color);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.home-index-inquiry-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--h3-color);
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+.home-index-inquiry-form button:hover {
+    background-color: var(--accent2-color);
+}
+/*Index-Home page FORM ends here*/
+
+/*Index-Home page Figures-captions-paragraphs begins here*/
+
 .home-index-image-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -373,6 +443,7 @@ h4 {
     grid-column: 1 /3;
     justify-self: center;
 }
+/*Index-Home page Figures-captions-paragraphs ends here*/
 
 /*Index-Home page begins here*/
 
