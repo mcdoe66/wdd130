@@ -118,34 +118,30 @@ header img{
 .hero {
     position:relative;
     width:100%;
-    height: 100vh;
-    overflow: hidden;
 }
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 .hero h1 {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    padding: 2rem;
-    transform: translate(-50%, -50%);
-    color:var(--h1-color);
-    font-size: clamp(8rem, 5vw, 7rem); 
-    max-width: 90%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-color: transparent;
+    width: 100%;
+    text-align: center;    
+    top: 10%;
+    font-family: var(--heading-font-family);
+    font-size: 8rem;
+    letter-spacing: 0.05em;
 }
 .hero p {
     color: var(--h3-color);
+    font-size: 1.15rem;
+    font-family: var(--body-text);
     padding: 10px;
-    text-align: left;
-    margin: 0;
-    flex: 1;
 }
 .hero article img {
     width: 100px;
@@ -159,11 +155,10 @@ header img{
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 80%;
     background-color:var(--accent2-color);
     padding: 1rem;
-    justify-content: space-between;
-    gap: 20px;
+border-radius: 10px;
 }
 /* here ends the upper main image with company name, the inset image, paragraph and background banner*/
 
