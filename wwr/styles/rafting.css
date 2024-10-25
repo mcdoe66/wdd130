@@ -131,22 +131,19 @@ img {
     letter-spacing: 0.05em;
     z-index: 1;
 }
-
 .hero p {
     color: var(--h3-color);
     font-size: 1.15rem;
     font-family: var(--body-text);
     padding: 10px;
 }
-
 .hero article img {
     width: 100px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--heading-text-color);
     padding: 2px;
     float: right;
 }
-
 .hero article {
     position: absolute;
     left: 50%;
@@ -157,7 +154,6 @@ img {
     padding: 1rem;
     border-radius: 10px;
 }
-
 .hero-content {
     position: absolute;
     top: 60%;
@@ -184,35 +180,24 @@ img {
     text-align: center;
     padding: 20px;
 }
-
 .history h2 {
     grid-column: 1 / 4;
     margin-bottom: 20px;
 }
-
 .history p:first-of-type {
     grid-column: 1 / 2;
     text-align: left;
 }
-
 .history img {
     grid-column: 2 / 3;
     max-width: 100%;
     height: auto;
 }
-
 .history p:last-of-type {
     grid-column: 3 / 4;
     text-align: left;
 }
-
 /*below coresponds to the adventure awaits image placement*/
-div {
-    background-color: var(--background-color);
-    text-align: center;
-    padding: 20px;
-}
-
 section h2 {
     margin-bottom: 20px;
 }
@@ -278,7 +263,7 @@ figure {
     align-items: flex-start;
     margin-bottom: 20px;
     width: 100%;
-    ;
+    border: 3px solid var(--h2-color);
 }
 
 .contact-container h3 {
@@ -297,22 +282,27 @@ figure {
     flex: 1;
     min-width: 300px;
     margin-right: 20px;
+    border: 5px solid var(--h2-color);
 }
 
 .contact-details {
     flex: 2;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .contact.item {
     flex: 1;
     min-width: 30%;
     margin-bottom: 10px;
+    padding: 5px;
+    border: 5px solid var(--h2-color);
 }
 
 .contact-details img {
     margin-right: 10px;
+    padding: 5px;
 }
 
 .inquiry-form {
@@ -648,7 +638,6 @@ footer img {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .button-common:hover {
     background-color: var(--secondary-color);
     color: var(--h2-color);
