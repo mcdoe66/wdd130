@@ -394,7 +394,8 @@ h4 {
 }
 
 .trips-cta-button:hover {
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
+    color: var(--h2-color);
 }
 
 /*Index-Home page FORM begins here*/
@@ -445,33 +446,7 @@ h4 {
     box-sizing: border-box;
 }
 
-.home-index-inquiry-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--h3-color);
-    color: aliceblue;
-    font-size: 16px;
-    cursor: pointer;
-}
 
-.home-index-inquiry-form button:hover {
-    background-color: var(--accent2-color);
-}
-
-.button-style {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--secondary-color);
-    color: aliceblue;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button-style:hover {
-    background-color: var(--secondary-color);
-}
 
 /*Index-Home page FORM ends here*/
 /*Index-Home page Figures-captions-paragraphs begins here*/
@@ -521,7 +496,7 @@ h4 {
     text-align: center;
 }
 
-.boredered-paragraph {
+.bordered-paragraph {
     border: 5px solid var(--h2-color);
     border-radius: 5px;
     padding: 10px;
@@ -530,21 +505,7 @@ h4 {
 }
 
 /*Index-Home page Figures-captions-paragraphs ends here*/
-.button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--h2-color);
-    font: 1em var(--body-text);
-    color: var(--secondary-color);
-    text-align: center;
-    text-decoration: underline;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.button-link:hover {
-    background-color: var(--accent2-color);
-}
 
 /*Index-Home page ends here*/
 /*Trips Page begins here */
@@ -583,18 +544,18 @@ h4 {
 
 .contact-cta-button {
     display: inline-block;
-    background-color: var(--accent2-color);
+    background-color: var(--h2-color);
     padding: 10px 20px;
     font: 1em var(--body-text), sans-serif;
-    color: var(--h2-color);
+    color: var(--secondary-color);
     text-align: center;
     text-decoration: underline;
     border-radius: 5px;
     cursor: pointer;
 }
-
 .contact-cta-button:hover {
     background-color: var(--secondary-color);
+    color: var(--h2-color);
 }
 
 .content-right table {
@@ -637,6 +598,7 @@ th {
     font-size: 2rem;
     background-color: var(--heading-text-color);
 }
+
 .trip-images,
 .table-section {
     margin-right: 0;
@@ -647,6 +609,7 @@ th {
     height: auto;
     width: 50%;
 }
+
 /*here ends the trips page*/
 footer {
     border-top: 2rem solid var(--h2-color);
@@ -656,6 +619,7 @@ footer {
     align-items: center;
     padding: 50px;
 }
+
 footer p {
     flex-grow: 1;
     text-align: center;
@@ -682,8 +646,30 @@ footer img {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
 .bordered-paragraph {
     border: 5px solid var(--h2-color);
     border-radius: 5px;
     padding: 10px;
 }
+
+.button-common {
+    border: 5px solid var(--h2-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--h2-color);
+    font-family: var(--body-text);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-common:hover {
+    background-color: var(--secondary-color);
+    color: var(--h2-color);
+}
+
