@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -28,87 +28,93 @@
 
     <main>
 
-    <div class="hero">
-        <section>
-            <img src="images/wwrbanner-3.jpg" alt="banner" class="hero-image">
-           
-            <h1>Rafting Craft</h1>
-            <div class="hero-content">
-                <button class="cta-button">Click this button to see<br>our amazing adventures.</button>
-            </div>
-        </section>
-        </div>
-        
-        <br><br><br>
-            <section class="home-index-inquiry-form">
-                <h3>You are just a couple of steps away from receiving our fabulous newsletter.</h3>
-                <form action="/submit" method="post">
-                    <div class="username">
-                        <label for="username">Your Name</label>
-                        <input type="text" id="username" name="username" placeholder="Miss Piggy" required
-                            autocomplete="username"><br><br>
+        <div class="hero">
+            <section>
+                <img src="images/wwrbanner-3.jpg" alt="banner" class="hero-image">
+                <h1>Rafting Craft</h1>
+                <div class="hero-content">
+                    <div class="home-cta-container">
+                    <p>At RAFTING CRAFT, We want to keep you up to date with any new developments we are updating. The best way to do that, is to become and informed monthly newsletter subscriber. All it takes is filling out the form below, and you will be a member of an elite group of adventurers who want to be kept in the loop of the current trends and tips of White-Water Rafting.<br> To Learn more about our Adventure Packages, just hit the buton!</p>
+                    <a href="http://127.0.0.1:5500/wwr/trips.html" class="trips-cta-button">Hit this button now, <br>to see our amazing adventures!</a>
                     </div>
-    
-                    <div class="email">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="MissPiggy@myemail.com" required
-                            autocomplete="email"><br><br>
-                    </div>
-    
-                    <div class="message">
-                        <h4>Ideas for future publication topics you would love to learn about ;</h4><br>
-                        <label for="message">Type text here:</label><br><br>
-                        <textarea id="message" name="message" rows="10" cols="50" required></textarea><br><br>
-                    </div>
-
-                    <div class="submission">
-                        <button type="submit">Click this button to request<br>our amazing monthly newsletter.</button>
-                    </div>
-                </form>
+                </div>
             </section>
-
-    <section>
-        <h2>Why we do what we do...</h2>
-        <div class="home-index-image-container">
-            <figure>
-                <img src="images/1-advpkg-single-female.jpg" alt="Miss Piggy Rules wwr">
-                <figcaption>Rule the Rapids!</figcaption>
-                <p>We want to keep you up to date on current white water rafting topics and offerings, to guarantee you experience an excellent adventure!</p>
-            </figure>
-
-            <figure>
-                <img src="images/2-advpkg-Zen-Trips.jpg" alt="Friends gather for wwr">
-                <figcaption>Connect with Friends!</figcaption>
-                <p>We want to help you gather a group of your friends to create unforgettable memories together.</p>
-            </figure>
-        
-            <figure>
-                <img src="images/3-advpkg-Zen-Trips.jpg" alt="relax after wwr">
-                <figcaption>Relax and Unwind.</figcaption>
-                <p>We want to ensure you are in the midst of some of the most picturesque surroundings for you to enjoy as you unwind after an adventure and memory-filled experience.</p>
-            </figure>
-
-            <figure>
-                <img src="images/liveactionwwr.jpg" alt="Seek the Thrill!">
-                <figcaption>Weclome, Thrill Seekers!</figcaption>
-                <p>We want to create an opportunity for you to join other like-minded adventure seekers, and watch your true self come to the surface.</p>
-            </figure>
-
-            <figure>
-                <img src="images/muppet-friends.jpg" alt="Making New Friends">
-                <figcaption>Creating New Bonds!</figcaption>
-                <p>Because, you never know who you are going to meet!</p>
-            </figure>
         </div>
-        <section>
-            <div class="submission-contact">
-                <a href="http://127.0.0.1:5500/wwr/trips.html" class="button-link">
-                <button type="button" class="button-style">Click this button to see<br>our amazing selection of adventures.</button>
-            </a>
-            </div>
+
+        <br><br><br>
+        <section class="home-index-inquiry-form">
+            <h3>You are just a couple of steps away from receiving our fabulous newsletter.</h3>
+            <form action="/submit" method="post">
+                <div class="username">
+                    <label for="username">Your Name</label>
+                    <input type="text" id="username" name="username" placeholder="Miss Piggy" required
+                        autocomplete="username"><br><br>
+                </div>
+
+                <div class="email">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="MissPiggy@myemail.com" required
+                        autocomplete="email"><br><br>
+                </div>
+
+                <div class="message">
+                    <h4>Ideas for future publication topics you would love to learn about ;</h4><br>
+                    <label for="message">Type text here:</label><br><br>
+                    <textarea id="message" name="message" rows="10" cols="50" required></textarea><br><br>
+                </div>
+
+                <div class="submission">
+                    <button type="submit">Click this button to request<br>our amazing monthly newsletter.</button>
+                </div>
+            </form>
         </section>
-    </section>
-   
+
+        <section>
+            <h2>Why we do what we do...</h2>
+            <div class="home-index-image-container">
+                <figure>
+                    <img src="images/1-advpkg-single-female.jpg" alt="Miss Piggy Rules wwr">
+                    <figcaption>Rule the Rapids!</figcaption>
+                    <p class="bordered-paragraph">We want to keep you up to date on current white water rafting topics and offerings, to guarantee
+                        you experience an excellent adventure!</p>
+                </figure>
+
+                <figure>
+                    <img src="images/2-advpkg-Zen-Trips.jpg" alt="Friends gather for wwr">
+                    <figcaption>Connect with Friends!</figcaption>
+                    <p class="bordered-paragraph">We want to help you gather a group of your friends to create unforgettable memories together.</p>
+                </figure>
+
+                <figure>
+                    <img src="images/3-advpkg-Zen-Trips.jpg" alt="relax after wwr">
+                    <figcaption>Relax and Unwind.</figcaption>
+                    <p class="bordered-paragraph">We want to ensure you are in the midst of some of the most picturesque surroundings for you to
+                        enjoy as you unwind after an adventure and memory-filled experience.</p>
+                </figure>
+
+                <figure>
+                    <img src="images/liveactionwwr.jpg" alt="Seek the Thrill!">
+                    <figcaption>Weclome, Thrill Seekers!</figcaption>
+                    <p class="bordered-paragraph">We want to create an opportunity for you to join other like-minded adventure seekers, and watch
+                        your true self come to the surface.</p>
+                </figure>
+
+                <figure>
+                    <img src="images/muppet-friends.jpg" alt="Making New Friends">
+                    <figcaption>Creating New Bonds!</figcaption>
+                    <p class="bordered-paragraph">Because, you never know who you are going to meet!</p>
+                </figure>
+            </div>
+            <section>
+                <div class="submission-contact">
+                    <a href="http://127.0.0.1:5500/wwr/trips.html" class="button-link">
+                        <button type="button" class="button-style">Click this button to see<br>our amazing selection of
+                            adventures.</button>
+                    </a>
+                </div>
+            </section>
+        </section>
+
 
     </main>
     <footer>
