@@ -493,6 +493,19 @@ h4 {
     grid-column: 1 /3;
     justify-self: center;
 }
+.figure-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.boredered-paragraph {
+    border: 5px solid var(--h2-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
 /*Index-Home page Figures-captions-paragraphs ends here*/
 .button-link {
     display: inline-block;
