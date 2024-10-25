@@ -1,21 +1,18 @@
 :root {
-    --heading-background-color: #3f8efc;
     --heading-text-color: #deba6f;
     --heading-font-family: 'Amatic', 'Caveat', sans-serif;
     --body-text: 'Montserrat', 'Verdana', sans-serif;
-    --base-font-size: 16px; /* 1rem = 16px */
-    --h1-color:  rgb(233, 162, 183);
+    --base-font-size: 16px;
+    /* 1rem = 16px */
+    --h1-color: rgb(233, 162, 183);
     --h2-color: #2e7f67f7;
-    --h3-color:rgb(22, 93, 72);;
-    --primary-color:#3f8ec;
+    --h3-color: rgb(22, 93, 72);
+    ;
     --secondary-color: #fcddbc;
     --background-color: aliceblue;
-    --accent1-color: #5b60be;
-    --accent2-color: #104646;
     --padding: 1rem;
-    --border: 1px solid rgba(0,0,0,0.1);
 }
- /* this area is a default for the entire document.*/
+
 * {
     margin: 0;
     padding: 0;
@@ -24,16 +21,15 @@
     background-color: var(--background-color);
 
 }
-/* this ends the area that is a default for the entire document.*/
 
-/* below is coding for all headings, coding appearing AFTER this area defining heading instrustions will override this section.*/
 h1 {
     text-align: center;
     color: var(--h1-color);
-    font-size: 6rem; /*check sizing*/
+    font-size: 6rem;
     font-family: 'Amatic', 'Caveat', sans-serif;
     background-color: transparent;
 }
+
 h2 {
     text-align: center;
     width: 100%;
@@ -41,10 +37,11 @@ h2 {
     font-size: 5rem;
     padding: 0.5em;
     margin-top: 20px;
-    font-family:var(--heading-font-family); 
+    font-family: var(--heading-font-family);
     background-color: var(--secondary-color);
     border: 2px solid var(--h2-color);
 }
+
 h3 {
     font-family: var(--heading-font-family);
     text-align: center;
@@ -52,33 +49,29 @@ h3 {
     font-size: 3rem;
     padding: 0.5rem;
 }
+
 img {
     border: 2px solid var(--heading-text-color);
 }
-/* here end the default coding for all headings, coding appearing AFTER this area defining heading instrustions will override this section.*/
 
-/*below is the default coding for all paragraphs within the document.  Any coding made AFTER this area to parargraphs will override this default coding.*/
 p {
     color: black;
     font-size: 16px;
     font-family: 'Montserrat', 'Verdana', sans-serif;
 }
-/*here ends the default coding for all paragraphs within the document.  Any coding made AFTER this area to parargraphs will override this default coding.*/
 
-/*below is the default coding of the body of the document.  Any further coding to the body element after this section will override  body default coding.*/
 body {
     margin: 0;
     font-size: var(--base-font-size);
     font-family: var(--heading-font-family);
 }
-/*here ends the default coding of the body of the document.  Any further coding to the body element after this section will override  body default coding.*/
 
-/*below corresponds to the navigation buttons (index, about us, trips and contact us) in the header*/
 nav {
     width: 100%;
     font-size: 1rem;
     justify-content: center;
 }
+
 header nav {
     list-style: none;
     width: 100%;
@@ -86,6 +79,7 @@ header nav {
     justify-content: space-evenly;
     align-items: center;
 }
+
 header nav a {
     font-family: var(--body-text);
     color: var(--accent2-color);
@@ -94,11 +88,8 @@ header nav a {
     font-size: 1rem;
 }
 
-/*this ends the coding for the navigation buttons (index, about us, trips and contact us) in the header*/
-
-/*below corresponds to the header on repeating pages which includes the logo image.*/
 header {
-    border-bottom: 2rem solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
+    border-bottom: 2rem solid var(--h2-color);
     padding: 10px 20px;
     width: 100%;
     box-sizing: border-box;
@@ -106,61 +97,67 @@ header {
     grid-template-columns: 1fr 5fr;
     background-color: var(--secondary-color);
 }
-header img{
-    width: 100px; 
+
+header img {
+    width: 100px;
     height: auto;
     margin-right: 20px;
 }
-/*here ends the header on repeating pages which includes the logo image.*/
 
-/* below consists of the upper main image with company name, the inset image, paragraph and background banner*/
 .hero {
-    position:relative;
-    width:100%;
+    position: relative;
+    width: 100%;
     height: auto;
     min-height: 700px;
 }
+
 .hero img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
+
 img {
     overflow: hidden;
 }
+
 .hero h1 {
     position: absolute;
     width: 100%;
-    text-align: center;    
+    text-align: center;
     top: 10%;
     font-family: var(--heading-font-family);
     font-size: 8rem;
     letter-spacing: 0.05em;
     z-index: 1;
 }
+
 .hero p {
     color: var(--h3-color);
     font-size: 1.15rem;
     font-family: var(--body-text);
     padding: 10px;
 }
+
 .hero article img {
     width: 100px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    float:right;
+    float: right;
 }
+
 .hero article {
     position: absolute;
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
     width: 80%;
-    background-color:var(--accent2-color);
+    background-color: var(--accent2-color);
     padding: 1rem;
     border-radius: 10px;
 }
+
 .hero-content {
     position: absolute;
     top: 60%;
@@ -178,9 +175,6 @@ img {
     border: 10px solid var(--h2-color);
 }
 
-/* here ends the upper main image with company name, the inset image, paragraph and background banner*/
-
-/* the below sections consists of the history portion, containing a title, paragraph and image wrapped within the paragraph.*/
 .history {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -190,26 +184,27 @@ img {
     text-align: center;
     padding: 20px;
 }
+
 .history h2 {
     grid-column: 1 / 4;
     margin-bottom: 20px;
 }
+
 .history p:first-of-type {
     grid-column: 1 / 2;
     text-align: left;
 }
+
 .history img {
     grid-column: 2 / 3;
     max-width: 100%;
     height: auto;
 }
+
 .history p:last-of-type {
     grid-column: 3 / 4;
     text-align: left;
 }
-
-
-/* here ends the sections consisting of the history portion, containing a title, paragraph and image wrapped within the paragraph.*/
 
 /*below coresponds to the adventure awaits image placement*/
 div {
@@ -217,45 +212,44 @@ div {
     text-align: center;
     padding: 20px;
 }
+
 section h2 {
     margin-bottom: 20px;
 }
+
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 section .figures-container {
     display: grid;
     grid-template-columns: repeat(5, 20%);
 }
+
 .figures-container {
     height: 200px;
     object-fit: cover;
-}   
+}
+
 figure {
     margin: 0;
     text-align: center;
 }
+
 .figures-container img {
     max-width: 100%;
-   height: 200px;
-   object-fit: cover;
+    height: 200px;
+    object-fit: cover;
 }
-/*this completes the adventure awaits image placement*/
 
 /*-----below is page two- CONTACT US----*/
-
-
-/* contact us page - h1 */
-
-
-/*contact us page - team members- images and figcaps*/
-
 .team-members-container {
     display: grid;
     grid-template-columns: repeat(3, 33%);
 }
+
 .team-members-container {
     max-width: 100%;
     height: 200px;
@@ -265,18 +259,17 @@ figure {
 .team-members-container {
     margin-bottom: 50px;
 }
+
 .team-members-container img {
     max-width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
 .team-members-container figcaption {
     font-family: var(--heading-font-family);
     font-size: 1.5rem;
-
 }
-
-/*contact us page - how to contact us- address with icon, phone number with icon, email with icon*/
 
 .contact-container {
     display: flex;
@@ -284,37 +277,44 @@ figure {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
-    width: 100%;;
+    width: 100%;
+    ;
 }
+
 .contact-container h3 {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
 }
+
 .contact-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 .map {
     flex: 1;
     min-width: 300px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
+
 .contact-details {
     flex: 2;
     display: flex;
     flex-direction: column;
 }
+
 .contact.item {
     flex: 1;
     min-width: 30%;
     margin-bottom: 10px;
 }
+
 .contact-details img {
-   margin-right: 10px;
+    margin-right: 10px;
 }
-/*contact us page - form for users to send to us- user name and label, user email and label, radio buttons for 'general inquiry', 'reservation question', 'suggestions for website', a textarea for user questions and suggestions, a checkbox for the newsletter, and a submit button.*/
+
 .inquiry-form {
     background-color: var(--background-color);
     padding: 20px;
@@ -322,19 +322,23 @@ figure {
     border: 1px solid var(--h2-color);
     margin-bottom: 20px;
 }
+
 h4 {
     font-family: var(--heading-font-family);
     color: var(--h3-color);
     font-size: 2rem;
 }
+
 .inquiry-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .inquiry-form label {
     font-weight: bold;
 }
+
 .inquiry-form input[type="text"],
 .inquiry-form input[type="email"],
 .inquiry-form textarea,
@@ -344,6 +348,7 @@ h4 {
     border: 1px solid var(--h3-color);
     border-radius: 5px;
 }
+
 .inquiry-form button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -352,43 +357,45 @@ h4 {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .inquiry-form button:hover {
     background-color: #0056b3;
 }
+
 .inquiry-form label {
     font-family: var(--body-text);
 }
 
-/*contact us page- image of the rapids to span the entire page*/
 .rapids-image {
     width: 50%;
     height: 300px;
 }
+
 /*Contact  page ends here*/
 
 /*Index-Home page begins here*/
-/*here commences the call to action button on the home page directed to the trips page*/
 .home-cta-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
+
 .trips-cta-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--h2-color);
-    font: 1em var(--body-text),sans-serif;
+    font: 1em var(--body-text), sans-serif;
     color: var(--secondary-color);
     text-align: center;
     text-decoration: underline;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .trips-cta-button:hover {
     background-color: var(--accent2-color);
 }
-/*here ends the call to action button on the home page directed to the trips page*/
 
 /*Index-Home page FORM begins here*/
 .home-index-inquiry-form {
@@ -399,30 +406,36 @@ h4 {
     border-radius: 10px;
     background-color: transparent;
 }
+
 .home-index-inquiry-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 22px;
 }
+
 .home-index-inquiry-form .username,
 .home-index-inquiry-form .emai {
     display: flex;
     flex-direction: column;
 }
+
 .home-index-inquiry-form .message {
     grid-column: 1 / 3;
     text-align: center;
 }
+
 .home-index-inquiry-form .submission {
     grid-column: 1 / 3;
     text-align: center;
 }
+
 .home-index-inquiry-form label {
     margin-bottom: 5px;
     font-size: 2rem;
     font-weight: bold;
 }
+
 .home-index-inquiry-form input,
 .home-index-inquiry-form textarea {
     padding: 10px;
@@ -431,6 +444,7 @@ h4 {
     width: 100%;
     box-sizing: border-box;
 }
+
 .home-index-inquiry-form button {
     padding: 10px 20px;
     border: none;
@@ -440,9 +454,11 @@ h4 {
     font-size: 16px;
     cursor: pointer;
 }
+
 .home-index-inquiry-form button:hover {
     background-color: var(--accent2-color);
 }
+
 .button-style {
     padding: 10px 20px;
     border: none;
@@ -456,10 +472,9 @@ h4 {
 .button-style:hover {
     background-color: var(--secondary-color);
 }
+
 /*Index-Home page FORM ends here*/
-
 /*Index-Home page Figures-captions-paragraphs begins here*/
-
 .home-index-image-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -468,6 +483,7 @@ h4 {
     justify-items: center;
     align-items: start;
 }
+
 .home-index-image-container figure {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -475,30 +491,36 @@ h4 {
     gap: 10px;
     align-items: center;
 }
+
 .home-index-image-container fugure img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
+
 .home-index-image-container figure figcaption {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     text-align: center;
 }
+
 .home-index-image-container figure p {
     grid-column: 2 / 3;
     grid-row: 1 /3;
     align-self: center;
 }
+
 .home-index-image-container figure:nth-child(5) {
     grid-column: 1 /3;
     justify-self: center;
 }
+
 .figure-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .boredered-paragraph {
     border: 5px solid var(--h2-color);
     border-radius: 5px;
@@ -506,6 +528,7 @@ h4 {
     margin-top: 10px;
     width: 100%;
 }
+
 /*Index-Home page Figures-captions-paragraphs ends here*/
 .button-link {
     display: inline-block;
@@ -518,38 +541,39 @@ h4 {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .button-link:hover {
     background-color: var(--accent2-color);
 }
+
 /*Index-Home page ends here*/
-
-
 /*Trips Page begins here */
-
-/*here commences the call to action button on the trips page directed to the contact us page*/
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:  20px;
+    gap: 20px;
 }
+
 .content-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .trip-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .trips-cta-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
+
 .bordered-paragraph {
     border: 5px solid var(--h2-color);
     border-radius: 5px;
@@ -561,23 +585,23 @@ h4 {
     display: inline-block;
     background-color: var(--accent2-color);
     padding: 10px 20px;
-    font: 1em var(--body-text),sans-serif;
+    font: 1em var(--body-text), sans-serif;
     color: var(--h2-color);
     text-align: center;
     text-decoration: underline;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .contact-cta-button:hover {
     background-color: var(--secondary-color);
 }
-/*here ends the call to action button on the trips page directed to the contact us page*/
-/* formatting for table in Trips page starts here */
 
 .content-right table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .table-section {
     flex: 1;
 }
@@ -589,7 +613,7 @@ h4 {
 .trip-img {
     max-width: 50%;
     height: auto;
-    width: 50%; /*may need adjusting*/
+    width: 50%;
 }
 
 table {
@@ -598,49 +622,51 @@ table {
     border: solid 1rem var(--h2-color);
 }
 
-th, td {
+th,
+td {
     border: 3px solid var(--h2-color);
     padding: 8px;
     text-align: left;
     font-family: var(--body-text);
     background-color: var(--secondary-color);
 }
+
 th {
     border-bottom: 8px solid var(--h2-color);
     font-family: var(--heading-font-family);
     font-size: 2rem;
     background-color: var(--heading-text-color);
 }
-    .trip-images, .table-section {
-        margin-right: 0;
- }
-    .include-img {
-        max-width: 50%;
-        height: auto;
-        width: 50%; /*may need adjusting*/
+.trip-images,
+.table-section {
+    margin-right: 0;
+}
+
+.include-img {
+    max-width: 50%;
+    height: auto;
+    width: 50%;
 }
 /*here ends the trips page*/
-
-
-
-
 footer {
-    border-top: 2rem solid var(--h2-color);/* this adds a solid line that spans the top of the footer*/
+    border-top: 2rem solid var(--h2-color);
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px; /*adjust as needed*/
+    padding: 50px;
 }
 footer p {
     flex-grow: 1;
     text-align: center;
     background-color: var(--secondary-color);
 }
+
 footer a {
-    margin-left: 20px; /*adjust as needed*/
+    margin-left: 20px;
     background-color: var(--secondary-color);
 }
+
 footer img {
     background-color: var(--secondary-color);
     border: none;
