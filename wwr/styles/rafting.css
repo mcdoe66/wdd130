@@ -105,7 +105,6 @@ header {
     display: grid;
     grid-template-columns: 1fr 5fr;
     background-color: var(--secondary-color);
-    border-bottom: ;
 }
 header img{
     width: 100px; 
@@ -127,8 +126,7 @@ header img{
     border-radius: 10px;
 }
 img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    overflow: hidden;
 }
 .hero h1 {
     position: absolute;
