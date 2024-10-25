@@ -229,41 +229,29 @@ figure {
 }
 
 .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    width: 100%;
-    border: 3px solid var(--h2-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
 .contact-container h3 {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
 }
-
 .contact-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-
 .map {
     flex: 1;
-    min-width: 300px;
     margin-right: 20px;
-    border: 5px solid var(--h2-color);
 }
-
 .contact-details {
     flex: 2;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-
 .contact.item {
     flex: 1;
     min-width: 30%;
@@ -271,7 +259,6 @@ figure {
     padding: 5px;
     border: 5px solid var(--h2-color);
 }
-
 .contact-details img {
     margin-right: 10px;
     padding: 5px;
@@ -284,9 +271,6 @@ figure {
     border: 1px solid var(--h2-color);
     margin-bottom: 20px;
 }
-
-
-
 .inquiry-form form {
     display: flex;
     flex-direction: column;
@@ -315,7 +299,7 @@ figure {
 /*Index-Home page begins here*/
 .home-cta-container {
     position: absolute;
-    bottom: 40%;
+    bottom: 10%;
     left: 10%;
     right: 10%;
     padding: 20px;
