@@ -613,12 +613,12 @@ th {
 }
     .trip-images, .table-section {
         margin-right: 0;
-    }
+ }
     .include-img {
         max-width: 50%;
         height: auto;
         width: 50%; /*may need adjusting*/
-    }
+}
 /*here ends the trips page*/
 
 
