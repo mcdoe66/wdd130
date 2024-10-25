@@ -108,6 +108,7 @@ header img {
     height: auto;
     margin-right: 20px;
 }
+
 html, body {
     height: 100%;
     margin: 0;
@@ -115,114 +116,32 @@ html, body {
 }
 .hero {
     position: relative;
-    margin-top: 0;
-    height: 100vh;
-    background-image: url(images/wwrbanner-1.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 0;
 }
-
 .hero h1 {
     position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
     background-color: transparent;
-    width: 100%;
-    text-align: center;
-    top: 10%;
-    font-family: var(--heading-font-family);
-    font-size: 8rem;
-    letter-spacing: 0.05em;
-    color: var(--h1-color);
-}
-
-.hero article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px;
-    width: 80%;
-    background-color: rgba(255,, 255, 255, 0.8);
-    text-align: left;
-}
-.hero article img {
-    float: right;
-    margin-left: 20px;
-    width: 150px;
-}
-.hero article p {
-    font-size: 1rem;
-    color: var(--text-color);
-    font-family: var(--body-text);
-    padding: 2px;
-    margin: 0;
-    line-height: 1.5;
-}
-
-
-/*
-.hero {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 700px;
-}
-.hero h1 {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 10%;
-    font-family: var(--heading-font-family);
-    font-size: 8rem;
-    letter-spacing: 0.05em;
-    z-index: 1;
 }
 .hero img {
-    width: 100%;
+     width: 100%;
     height: auto;
-    border-radius: 10px;
-}
-.hero p {
-    color: var(--h3-color);
-    font-size: 1.15rem;
-    font-family: var(--body-text);
-    padding: 10px;
-}
-.hero article img {
-    width: 100px;
-    height: auto;
-    border: 1px solid var(--heading-text-color);
-    padding: 2px;
-    float: right;
 }
 .hero article {
-    position: relative;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    background-color: var(--accent2-color);
-    padding: 1rem;
-    border-radius: 10px;
-}
-.hero-content {
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    z-index: 0;
-    width: 90%;
-    max-width: 1200px;
+    bottom: 40%;
+    left: 10%;
+    right: 10%;
     padding: 20px;
-    border-radius: 10px;
+    font-family: var(--body-text);
+    background-color: var(--background-color);
     border: 10px solid var(--h2-color);
 }
-*/
-
+.hero article img {
+    float: right;
+    width: 200px;
+}
 
 .history {
     display: grid;
@@ -395,10 +314,16 @@ figure {
 
 /*Index-Home page begins here*/
 .home-cta-container {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    right: 10%;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    border: 10px solid var(--h2-color);
 }
 
 .trips-cta-button {
