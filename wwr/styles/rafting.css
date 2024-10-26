@@ -443,20 +443,17 @@ figure {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
 .content-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .trip-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 .trips-cta-container {
     display: flex;
     flex-direction: column;
