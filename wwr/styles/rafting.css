@@ -309,6 +309,15 @@ figure {
     gap: 20px;
     border: 10px solid var(--h2-color);
 }
+.home-cta-container content 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-cta-container p {
+    margin: 0;
+}
 
 .trips-cta-button {
     display: inline-block;
